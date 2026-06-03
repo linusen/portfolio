@@ -11,7 +11,7 @@ export function Header() {
     <header className="border-b border-border py-6">
       <Container className="flex flex-col gap-4 sm:flex-row sm:items-baseline sm:justify-between">
         <Link href="/" className="text-lg font-medium tracking-tight text-foreground">
-          Your Name
+          Linus Lindgren
         </Link>
         <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted">
           {nav.map((item) => (

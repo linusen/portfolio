@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="mt-auto border-t border-border py-10">
       <Container>
         <p className="text-sm text-muted">
-          Built with Next.js. Updated {year}.
+          Linus Lindgren {year}.
         </p>
       </Container>
     </footer>
