@@ -10,8 +10,7 @@ export default function HomePage() {
     <Container>
       <section className="mb-20 max-w-prose sm:mb-28">
         <p className="text-lg text-muted leading-relaxed">
-          I build small things on the web and try to keep them fast and easy to read.
-          This site is a short intro and a few projects I care about right now.
+          Copenhagen-based UX Designer. I find what frustrates people, then design it away.
         </p>
       </section>
 

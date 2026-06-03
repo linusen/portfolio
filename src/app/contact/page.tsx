@@ -17,8 +17,8 @@ export default function ContactPage() {
       <div className="space-y-6 text-muted">
         <p>
           <span className="block text-sm text-foreground">Email</span>
-          <a href="mailto:you@example.com" className="text-accent hover:underline">
-            you@example.com
+          <a href="mailto:linus.c.lindgren@gmail.com" className="text-accent hover:underline">
+            linus.c.lindgren@gmail.com
           </a>
         </p>
         <p>
@@ -35,12 +35,12 @@ export default function ContactPage() {
         <p>
           <span className="block text-sm text-foreground">LinkedIn</span>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/linuslindgren/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:underline"
           >
-            linkedin.com/in/yourusername
+            linkedin.com/in/linuslindgren
           </a>
         </p>
       </div>
