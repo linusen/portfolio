@@ -4,16 +4,14 @@ A personal site built with Next.js, TypeScript, and Tailwind. Home, project list
 
 ## Run locally
 
-You need Node.js 18 or newer.
-
-```bash
+```
 npm install
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000). Production build:
 
-```bash
+```
 npm run build
 npm start
 ```
@@ -72,9 +70,15 @@ media: [
 ```
 
 ## Deploy
+```
+git add .
+git commit -m "describe what changed"
+git push
+```
 
 This is a standard Next.js app. Easiest path: push to GitHub and import the repo on [Vercel](https://vercel.com). It will run `npm run build` and host the output.
 
 Other hosts work too as long as they support Next.js (Node server or static export if you configure that). On a VPS: clone the repo, `npm install`, `npm run build`, then run `npm start` behind a process manager and reverse proxy.
 
 Set your site name, contact links, and about copy in the components under `src/components` and `src/app` before you go live.
+
