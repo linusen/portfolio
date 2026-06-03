@@ -5,6 +5,18 @@ import type { Project } from "@/lib/types";
  */
 export const projects: Project[] = [
   {
+  slug: "telenor-phone-finder",
+  title: "Telenor Phone Finder",
+  year: "2024",
+  status: "shipped",
+  role: "UX Designer",
+  oneLiner: "Making it easier to choose the right phone at Telenor.",
+  context: "...",
+  work: "...",
+  tags: ["UX", "Figma"],
+  featured: true,
+},
+  {
     slug: "pomodoro-timer",
     title: "Pomodoro Timer",
     year: "2023",
