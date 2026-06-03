@@ -64,12 +64,13 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
           <div className="space-y-10">
             {project.media!.map((item) => (
               <figure key={item.src}>
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg border border-border bg-background">
+               <div className="overflow-hidden rounded-lg border border-border bg-background">
                   <Image
                     src={item.src}
                     alt={item.alt}
-                    fill
-                    className="object-cover"
+                    width={1600}
+                    height={900}
+                    className="h-auto w-full"
                     sizes="(max-width: 672px) 100vw, 672px"
                   />
                 </div>

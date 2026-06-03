@@ -24,12 +24,12 @@ export default function ContactPage() {
         <p>
           <span className="block text-sm text-foreground">GitHub</span>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/linusen"
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:underline"
           >
-            github.com/yourusername
+            github.com/linusen
           </a>
         </p>
         <p>

@@ -1,9 +1,55 @@
 import type { Project } from "@/lib/types";
-
 /**
  * Add a project here. Slug becomes the URL: /projects/your-slug
  */
 export const projects: Project[] = [
+  {
+    slug: "virklund-sport",
+    title: "Reimagining Virklund Sport",
+    year: "2020",
+    status: "shipped",
+    role: "Led UX · student project with two others",
+    oneLiner:
+      "Rebuilding a sports-flooring catalogue so architects can specify products without calling for answers it should already have.",
+    context:
+      "Virklund Sport has made indoor sports flooring since the 1960s. The products are good; the catalogue made them hard to specify. Architects need dimensions, materials, customisation options and blueprint specs to do their job, and the old catalogue didn't give them that, so they had to call Virklund for answers the catalogue should have had. We spent eight weeks fixing that, starting with the architects who use it most.",
+    work: `**Tools:** Figma, InDesign. **Timeline:** eight weeks.
+
+A double diamond approach, testing and iterating at each phase to make sure we were solving the right problem first.
+\`\`\`
+Discover → Define → Ideate → Design
+\`\`\`
+
+**Discover.** Set out to define the target group, user needs, and the product and business benefits. Architects need dimensions, materials, customisation options and blueprint specs before they can confidently specify a product. That information existed, it just wasn't in the catalogue. We talked extensively with architects and noted exactly what they needed.
+
+**Define.** Interviews with architects from two firms surfaced three clear needs: a more structured layout, detailed product specs (dimensions, materials, colours, 3D models), and easier ways to get in touch. Those three became the backbone of the redesign.
+
+**Ideate.** Sketched the catalogue structure first, how it should work for the customer and what the main elements were, before touching style. Only once that was agreed did we move to colours, type, and feel. That order kept us from losing time on pixel-perfect questions before the concept was in place.
+
+**Design.** Built high-fidelity wireframes from the insights, tested with users for another round of refinement, and aligned on the version to take forward.`,
+    media: [
+      {
+        src: "/images/virklund-sport-introduction.jpeg",
+        alt: "Catalogue welcome spread with historical photos of Virklund Sport",
+        caption: "The opening spread. Sixty years of history, setting the tone before the product detail.",
+      },
+      {
+        src: "/images/virklund-sport-contents.jpeg",
+        alt: "Redesigned catalogue contents page with colour-coded product categories",
+        caption: "The restructured contents page. Colour-coded categories so architects can navigate to what they need.",
+      },
+      {
+        src: "/images/virklund-sport-specs.jpeg",
+        alt: "Catalogue spread showing Pulastic flooring technical specifications and tables",
+        caption: "Product specs laid out clearly, dimensions, materials, and technical data the old catalogue made architects call for.",
+      },
+      
+    ],
+    reflection:
+      "This project made the double diamond click for me. Spending real time in discovery before jumping to solutions changed the quality of what we designed. Talking directly to architects at two firms meant the decisions had real backing, not assumptions. And the new format makes it straightforward to add products without breaking the consistency of the whole thing.",
+    tags: ["UX", "Figma", "InDesign"],
+    featured: true,
+  },
   {
     slug: "mental-wellbeing-guidance",
     title: "Mental Wellbeing Guidance",
@@ -26,13 +72,16 @@ Four phases, kept deliberately simple.
 
 **Synthesis.** Built a discussion guide from the survey findings and interviewed five participants, 25 to 45 minutes each over Google Meet, transcribed with Trint. Then affinity mapping in Figma to find patterns across quotes and transcripts, and to check them against the hypotheses.
 
+![Affinity map mapping hypotheses to user quotes, insights, and design principles](/images/mental-wellbeing-synthesis.png)
+
 Three insights came out, each pointing to a principle:
 
 - Daily routines crowd out time for rest. → Give users simple opportunities to reach a mindful state.
 - People want to take back control of their devices, but hard restrictions backfire. → Give frequent phone users actionable self-control information, not a cutoff.
 - Stressful jobs follow people home. → Prevent work stress from spilling into everyday life.
 
-**Recommendations.** Boiled it down to three directions to take forward: how might we give users simple opportunities to reach a mindful state; how might we give frequent phone users actionable self-control information; how might we give people tools to overcome everyday stress. Each needs further research paired with stakeholder workshops.`,    reflection:
+**Recommendations.**
+ Boiled it down to three directions to take forward: how might we give users simple opportunities to reach a mindful state; how might we give frequent phone users actionable self-control information; how might we give people tools to overcome everyday stress. Each needs further research paired with stakeholder workshops.`,    reflection:
       "We jumped in the deep end and learned to swim. My first real run through the UX research fundamentals, fast, with workshops pushing the creative side hard. I went in worried the pandemic would undermine everything, especially around control. The users proved otherwise. If I did it again I'd lean harder on triangulation, comparing interviews and surveys more closely in synthesis, which means a bigger, more varied dataset. The honest tradeoff in a four-week project.",
     tags: ["UX Research", "Figma", "Interviews"],
     featured: true,
