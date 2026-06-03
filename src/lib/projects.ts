@@ -5,6 +5,39 @@ import type { Project } from "@/lib/types";
  */
 export const projects: Project[] = [
   {
+    slug: "mental-wellbeing-guidance",
+    title: "Mental Wellbeing Guidance",
+    year: "2021",
+    status: "shipped",
+    role: "UX Researcher (solo)",
+    oneLiner:
+      "Four weeks of research on self-control and mental health, ending in clear directions for a client to build on.",
+    context:
+      "The brief was self-control and mental health, framed as: how might we create a behavior-switching app that gives people control? I led the research end to end, surveys, interviews, synthesis, recommendations. No prototype, just a clear set of next steps. It ran during the pandemic, which made \"control\" a loaded word. I worried the timing would skew everything. If anything it made the research sharper.",
+    
+      work: `**Tools:** Figma, Google Meet, Trint. **Timeline:** four weeks.
+
+
+Four phases, kept deliberately simple.
+
+**Kick-start.** Defined the target group, their needs, and the product and business angles. Used the double diamond to frame the problem before chasing solutions. I started from the brief's persona, mapped assumptions about user needs, plotted them by importance, and wrote three hypotheses: that users struggle to spend time meaningfully, that they want more balance away from digital spaces, and that they want to overcome stress. Three angles on the same problem, explored broadly before narrowing.
+
+**Fieldwork.** Triangulated quantitative and qualitative methods, surveys first, then interviews to go deeper. Survey participants were split evenly by gender, aged 28 to 36, most reporting stress once or twice a week. Phone use ranged wildly, 30 minutes to 6 hours a day. The most common effect of stress was the inability to rest, followed by lower efficiency. I kept the small-sample limitation front of mind throughout.
+
+**Synthesis.** Built a discussion guide from the survey findings and interviewed five participants, 25 to 45 minutes each over Google Meet, transcribed with Trint. Then affinity mapping in Figma to find patterns across quotes and transcripts, and to check them against the hypotheses.
+
+Three insights came out, each pointing to a principle:
+
+- Daily routines crowd out time for rest. → Give users simple opportunities to reach a mindful state.
+- People want to take back control of their devices, but hard restrictions backfire. → Give frequent phone users actionable self-control information, not a cutoff.
+- Stressful jobs follow people home. → Prevent work stress from spilling into everyday life.
+
+**Recommendations.** Boiled it down to three directions to take forward: how might we give users simple opportunities to reach a mindful state; how might we give frequent phone users actionable self-control information; how might we give people tools to overcome everyday stress. Each needs further research paired with stakeholder workshops.`,    reflection:
+      "We jumped in the deep end and learned to swim. My first real run through the UX research fundamentals, fast, with workshops pushing the creative side hard. I went in worried the pandemic would undermine everything, especially around control. The users proved otherwise. If I did it again I'd lean harder on triangulation, comparing interviews and surveys more closely in synthesis, which means a bigger, more varied dataset. The honest tradeoff in a four-week project.",
+    tags: ["UX Research", "Figma", "Interviews"],
+    featured: true,
+  },
+  {
   slug: "telenor-comparison",
   title: "Device Comparison — Telenor",
   year: "2024",
