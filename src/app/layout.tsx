@@ -11,8 +11,8 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Your Name",
-    template: "%s · Your Name",
+    default: "Linus Lindgren",
+    template: "%s · Linus Lindgren",
   },
   description: "Personal portfolio. Projects, writing, and ways to get in touch.",
 };

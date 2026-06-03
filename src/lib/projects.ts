@@ -4,6 +4,48 @@ import type { Project } from "@/lib/types";
  */
 export const projects: Project[] = [
   {
+    slug: "telenor-guided-buying",
+    title: "Guided Buying Experience — Telenor",
+    year: "2025",
+    status: "in progress",
+    role: "UX Designer (with 1 UI designer, 2 developers)",
+    oneLiner:
+      "A guided buying flow built around conversation design, helping customers choose a phone with confidence.",
+    context:
+      "New customers often struggle to understand products and pricing well enough to choose the right solution online. We set out to surface contextual guidance at the right moment and translate internal selling points into real customer benefits, making the experience easier to navigate.",
+    work: `**Tools:** Figma, Maze, ProtoPie. **Timeline:** four months.
+
+We tested and iterated at each phase to make sure we were solving the right problem first.
+
+**Discovery.** Kicked off with a cross-functional workshop where three themes surfaced: product configuration, pricing confusion, and the gap between buying in-store versus online.
+
+**Define.** Clustered the workshop findings into How Might We questions, which pointed to one clear direction: customers need more guidance when navigating products and pricing online. That led us to a guided digital experience, drawing on the dialogue customers have in physical stores.
+
+**Ideate.** Sketched solution directions one decision at a time, replicating the kind of conversation a good store assistant would have, rather than overwhelming users with options upfront.
+
+**Design.** Translated the concept into a tangible experience focused on clarity and guidance. Help sits exactly where decisions happen, informative rather than promotional, and available in both text and video so users engage in the way that suits them.`,
+    media: [
+      {
+        src: "/images/telenor-guided-design.png",
+        alt: "Two phone screens showing the guided iPhone 16 Pro buying flow with colour and storage selection",
+        caption: "The guided flow. One decision at a time, with help surfaced right where the choice happens.",
+      },
+      {
+        src: "/images/telenor-guided-help.png",
+        alt: "Phone screen showing contextual guide element with text and video help during product selection",
+        caption: "Contextual guidance placed at the decision point, informative not promotional, in text and video.",
+      },
+    ],
+    
+    reflection:
+      "After testing, it was clear that timely, relevant guidance makes a real difference when people face complex choices. The win was placing help exactly where decisions happen, and letting people take it in whichever way suited them.",
+      links: [
+      { label: "Interactive prototype", url: "https://cloud.protopie.io/p/your-prototype-id" },
+    ],
+    tags: ["UX", "Figma", "Maze", "ProtoPie"],
+    featured: true,
+  },
+  {
     slug: "virklund-sport",
     title: "Reimagining Virklund Sport",
     year: "2020",
