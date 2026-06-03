@@ -23,8 +23,12 @@ export const projects: Project[] = [
 **Ideate.** Sketched three connected surfaces: a campaign page, a comparison modal, and a product detail page. Iterative hall tests with a small group narrowed it to two directions, which we then A/B tested at scale. Testing shaped the details: key specs highlighted for a faster scan, CTA kept sticky at the top.
 
 **Design.** Built the high-fidelity prototype from what the testing revealed, and aligned the team on the version to ship.`,
+  metrics: [
+    { value: "+256%", label: "Conversion lift when comparison was used" },
+    { value: "93.51%", label: "Of orders contained the compared device" },
+  ],
   reflection:
-    "The numbers backed the bet. Sessions that included a comparison converted at +256%, and 93.51% of those orders contained the compared device. People compare, then they buy. Validating the behaviour up front, before designing, is what kept the month honest.",
+      "Validating the behaviour up front, before designing anything, is what kept a one-month timeline honest. The temptation is always to start sketching. The survey earned us the right to.",
   tags: ["UX", "Figma", "Maze", "ProtoPie"],
   featured: true,
 },
@@ -85,7 +89,7 @@ She reviews changes in a staging link before anything goes live.`,
       { label: "Staging site", url: "https://example.com" },
       { label: "Figma", url: "https://figma.com/example" },
     ],
-    featured: true,
+    featured: false,
   },
   {
     slug: "neighborhood-walks",
@@ -99,7 +103,7 @@ She reviews changes in a staging link before anything goes live.`,
       "I kept starting walks with no record of where I had been. Notes apps felt too heavy for a five-minute loop.",
     tags: ["Next.js", "TypeScript", "Maps"],
     links: [{ label: "Source", url: "https://github.com/example/neighborhood-walks" }],
-    featured: true,
+    featured: false,
   },
 ];
 

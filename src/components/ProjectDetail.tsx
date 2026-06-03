@@ -17,6 +17,7 @@ function SectionHeading({ children }: { children: string }) {
 
 export function ProjectDetail({ project }: ProjectDetailProps) {
   const hasMedia = Boolean(project.media?.length);
+  const hasMetrics = Boolean(project.metrics?.length);
   const hasLinks = Boolean(project.links?.length);
 
   return (
@@ -80,6 +81,23 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
               </figure>
             ))}
           </div>
+        </section>
+      ) : null}
+
+      {hasMetrics ? (
+        <section className="border-b border-border py-10">
+          <dl className="flex flex-wrap gap-x-12 gap-y-8 sm:gap-x-16">
+            {project.metrics!.map((metric) => (
+              <div key={metric.label} className="min-w-[7rem] flex-1 basis-[7rem] sm:flex-none">
+                <dt className="text-2xl font-medium tracking-tight text-foreground sm:text-3xl">
+                  {metric.value}
+                </dt>
+                <dd className="mt-1 max-w-[12rem] text-sm leading-snug text-muted">
+                  {metric.label}
+                </dd>
+              </div>
+            ))}
+          </dl>
         </section>
       ) : null}
 
