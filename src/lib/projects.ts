@@ -5,6 +5,30 @@ import type { Project } from "@/lib/types";
  */
 export const projects: Project[] = [
   {
+  slug: "telenor-comparison",
+  title: "Device Comparison — Telenor",
+  year: "2024",
+  status: "shipped",
+  role: "UX Designer (with 1 UI designer, 1 developer)",
+  oneLiner:
+    "A comparison tool that lets people stack phones side by side and cut through the spec noise.",
+  context:
+    "Part of a bigger push to turn Telenor's online shop into a flagship store experience. New customers were struggling to compare devices and find the right fit while browsing. I led the UX from discovery through to a tested prototype in one month.",
+  work: `We tested at each phase to make sure we were solving the right problem before designing the solution.
+
+**Discover.** A short survey to validate one assumption: do people actually compare phones before buying online? Confirmed the behaviour existed before building anything around it.
+
+**Define.** Mapped the findings onto a feasibility matrix with stakeholders, each sticky a possible direction, to agree fast on where to focus.
+
+**Ideate.** Sketched three connected surfaces: a campaign page, a comparison modal, and a product detail page. Iterative hall tests with a small group narrowed it to two directions, which we then A/B tested at scale. Testing shaped the details: key specs highlighted for a faster scan, CTA kept sticky at the top.
+
+**Design.** Built the high-fidelity prototype from what the testing revealed, and aligned the team on the version to ship.`,
+  reflection:
+    "The numbers backed the bet. Sessions that included a comparison converted at +256%, and 93.51% of those orders contained the compared device. People compare, then they buy. Validating the behaviour up front, before designing, is what kept the month honest.",
+  tags: ["UX", "Figma", "Maze", "ProtoPie"],
+  featured: true,
+},
+  {
   slug: "telenor-phone-finder",
   title: "Telenor Phone Finder",
   year: "2024",
