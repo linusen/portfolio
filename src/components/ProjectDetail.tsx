@@ -86,6 +86,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
 
       {hasMetrics ? (
         <section className="border-b border-border py-10">
+          <SectionHeading>Impact</SectionHeading>
           <dl className="flex flex-wrap gap-x-12 gap-y-8 sm:gap-x-16">
             {project.metrics!.map((metric) => (
               <div key={metric.label} className="min-w-[7rem] flex-1 basis-[7rem] sm:flex-none">
