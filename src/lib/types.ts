@@ -11,6 +11,8 @@ export interface Project {
   year: string;
   status: ProjectStatus;
   role?: string;
+  tools?: string;
+  timeline?: string;
   oneLiner: string;
   context?: string;
   work?: string;

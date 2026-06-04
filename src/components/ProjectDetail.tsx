@@ -36,6 +36,20 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
             </>
           ) : null}
         </div>
+        {project.tools || project.timeline ? (
+          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted">
+            {project.tools ? (
+              <span>
+                <span className="text-foreground">Tools:</span> {project.tools}
+              </span>
+            ) : null}
+            {project.timeline ? (
+              <span>
+                <span className="text-foreground">Timeline:</span> {project.timeline}
+              </span>
+            ) : null}
+          </div>
+        ) : null}
       </header>
 
       <section className="border-b border-border py-10">
