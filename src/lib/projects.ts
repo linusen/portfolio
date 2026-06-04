@@ -6,8 +6,8 @@ export const projects: Project[] = [
   {
     slug: "telenor-guided-buying",
     title: "Guided Buying Experience — Telenor",
-    year: "2025",
-    status: "shipped",
+    year: "2026",
+    status: "in progress",
     role: "UX Designer (with 1 UI designer, 2 developers)",
     tools: "Figma, Maze, ProtoPie",
     timeline: "Four months",
