@@ -27,17 +27,14 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
         <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-muted">
           <span>{project.year}</span>
           <StatusTag status={project.status} />
-          {project.role ? (
-            <>
-              <span aria-hidden className="text-border">
-                ·
-              </span>
-              <span>{project.role}</span>
-            </>
-          ) : null}
         </div>
-        {project.tools || project.timeline ? (
+        {project.role || project.tools || project.timeline ? (
           <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted">
+            {project.role ? (
+              <span>
+                <span className="text-foreground">Role:</span> {project.role}
+              </span>
+            ) : null}
             {project.tools ? (
               <span>
                 <span className="text-foreground">Tools:</span> {project.tools}
