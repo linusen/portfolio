@@ -4,6 +4,44 @@ import type { Project } from "@/lib/types";
  */
 export const projects: Project[] = [
   {
+    slug: "telenor-checkout",
+    title: "Checkout Flow — Telenor & CBB",
+    year: "2026",
+    status: "in progress",
+    role: "UX Designer (with 1 UI designer, 2 developers)",
+    tools: "Figma, Capturi, Maze",
+    timeline: "2024, launching July 2026",
+    oneLiner:
+      "End-to-end checkout redesign for two telecom brands, built on one shared system.",
+    context:
+      "The existing checkout was structurally broken. Users couldn't go back without starting over. MitID validation appeared before they knew their delivery date. A PayEx rejection wiped the entire cart. Around 20% of checkouts were lost to credit check rejections with no recovery path. The brief was to fix it across both Telenor and CBB, on a shared platform, without either brand feeling compromised.",
+    work: `Four research methods, one consistent picture. Every phase fed directly into the system I built.
+
+**Discover.** Think-aloud tests with 4 users, a store safari at Telenor Fields, call log analysis via Capturi, and funnel data from analytics. Each one confirmed the same structural problems from a different angle. A notable finding from the store visit: customers were starting the online checkout, getting confused, and coming into the store to finish it in person.
+
+**Define.** Six pain points emerged: no way back, MitID placed too early, PayEx wiping the cart, delivery date confusion, a progress bar that didn't track actual progress, and a hover dependency that broke the flow on mobile. Four design principles became the filter for every decision that followed: simplicity, personalisation, WCAG 2.1 AA, and no hover dependency.
+
+**Ideate.** The fix wasn't a patch job. Individual solutions wouldn't hold without a proper system underneath. I mapped out a chapter model — Cart, Contact, Setup, Delivery, Summary, Payment, Receipt — where progress shows at chapter level only. That kept the bar honest without overwhelming users with granularity.
+
+**Design.** Four consistent navigation labels, used everywhere. Four modal types, each with a defined purpose and layout pattern: informative, action-oriented, guiding, and minibasket. Validation that only fires on forward movement, never preemptively. Every screen in the flow built on the same rules.`,
+    media: [
+      {
+        src: "/projects/telenor-checkout-chapters.png",
+        alt: "Diagram showing the checkout chapter structure: Cart, Contact, Setup, Delivery, Summary, Payment, Receipt",
+        caption: "The chapter model. Progress at the top level only, so the bar stays meaningful.",
+      },
+      {
+        src: "/projects/telenor-checkout-modals.png",
+        alt: "Four modal types shown side by side: informative, action-oriented, guiding, and minibasket",
+        caption: "Four modal types, each with a fixed purpose and layout pattern.",
+      },
+    ],
+    reflection:
+      "Building a system rather than patching symptoms was the right call. Two brands, one codebase, zero compromises on either side. The proof will be in the numbers once it's live.",
+    tags: ["UX", "Figma", "Capturi", "Maze"],
+    featured: true,
+  },
+  {
     slug: "telenor-guided-buying",
     title: "Guided Buying Experience — Telenor",
     year: "2026",
@@ -122,7 +160,7 @@ Three insights came out, each pointing to a principle:
     reflection:
       "We jumped in the deep end and learned to swim. My first real run through the UX research fundamentals, fast, with workshops pushing the creative side hard. I went in worried the pandemic would undermine everything, especially around control. The users proved otherwise. If I did it again I'd lean harder on triangulation, comparing interviews and surveys more closely in synthesis, which means a bigger, more varied dataset. The honest tradeoff in a four-week project.",
     tags: ["UX Research", "Figma", "Interviews"],
-    featured: true,
+    featured: false,
   },
   {
     slug: "telenor-comparison",
@@ -152,7 +190,7 @@ Three insights came out, each pointing to a principle:
     reflection:
       "Validating the behaviour up front, before designing anything, is what kept a one-month timeline honest. The temptation is always to start sketching. The survey earned us the right to.",
     tags: ["UX", "Figma", "Maze", "ProtoPie"],
-    featured: true,
+    featured: false,
   },
 ];
 
