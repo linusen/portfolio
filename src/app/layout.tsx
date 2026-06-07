@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import { SiteLayout } from "@/components/SiteLayout";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -26,6 +28,7 @@ export default function RootLayout({
     <html lang="en" className={dmSans.variable}>
       <body>
         <SiteLayout>{children}</SiteLayout>
+        <Analytics />
       </body>
     </html>
   );
