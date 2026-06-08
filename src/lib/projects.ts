@@ -160,7 +160,7 @@ Three insights came out, each pointing to a principle:
     reflection:
       "We jumped in the deep end and learned to swim. My first real run through the UX research fundamentals, fast, with workshops pushing the creative side hard. I went in worried the pandemic would undermine everything, especially around control. The users proved otherwise. If I did it again I'd lean harder on triangulation, comparing interviews and surveys more closely in synthesis, which means a bigger, more varied dataset. The honest tradeoff in a four-week project.",
     tags: ["UX Research", "Figma", "Interviews"],
-    featured: false,
+    featured: true,
   },
   {
     slug: "telenor-comparison",
@@ -183,6 +183,18 @@ Three insights came out, each pointing to a principle:
 **Ideate.** Sketched three connected surfaces: a campaign page, a comparison modal, and a product detail page. Iterative hall tests with a small group narrowed it to two directions, which we then A/B tested at scale. Testing shaped the details: key specs highlighted for a faster scan, CTA kept sticky at the top.
 
 **Design.** Built the high-fidelity prototype from what the testing revealed, and aligned the team on the version to ship.`,
+media: [
+  {
+    src: "/images/device-comparison-select.png",
+    alt: "Phone list with compare checkboxes, two phones ticked, and a sticky compare bar at the top.",
+    caption: "The way in. Tick the phones you're weighing up, then compare.",
+  },
+  {
+    src: "/images/device-comparison-tool.png",
+    alt: "Two phones compared side by side with an empty third slot, specs lined up and differences highlighted.",
+    caption: "The comparison itself. Up to three phones, key specs lined up, differences highlighted so the choice is quick.",
+  },
+  ],
     metrics: [
       { value: "+256%", label: "Conversion lift when comparison was used" },
       { value: "93.51%", label: "Of orders contained the compared device" },
@@ -190,7 +202,7 @@ Three insights came out, each pointing to a principle:
     reflection:
       "Validating the behaviour up front, before designing anything, is what kept a one-month timeline honest. The temptation is always to start sketching. The survey earned us the right to.",
     tags: ["UX", "Figma", "Maze", "ProtoPie"],
-    featured: false,
+    featured: true,
   },
 ];
 
