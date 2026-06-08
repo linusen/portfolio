@@ -202,6 +202,10 @@ media: [
     reflection:
       "Validating the behaviour up front, before designing anything, is what kept a one-month timeline honest. The temptation is always to start sketching. The survey earned us the right to.",
     tags: ["UX", "Figma", "Maze", "ProtoPie"],
+    
+    links: [
+      { label: "See it live", url: "https://www.telenor.dk/shop/mobiler/" },
+    ],
     featured: true,
   },
 ];
