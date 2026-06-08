@@ -14,7 +14,7 @@ Student work gets labelled as student work. No fabricated metrics.
 
 ## Look
 
-Restrained and minimal. Lots of whitespace, one muted accent color. Helvetica Neue (system) for body, Newsreader serif for headings. Mobile-first.
+Restrained and minimal. Lots of whitespace, one muted accent color (teal). DM Sans (via next/font) for everything. Mobile-first.
 
 ## Project type
 
