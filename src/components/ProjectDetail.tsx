@@ -69,20 +69,20 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
         </section>
       ) : null}
 
-      {hasMedia ? (
+{hasMedia ? (
         <section className="border-b border-border py-10">
           <SectionHeading>Visual</SectionHeading>
-          <div className="space-y-10">
+          <div className="space-y-10 lg:mx-[calc((100%-1100px)/2)] lg:w-[1100px]">
             {project.media!.map((item) => (
               <figure key={item.src}>
-               <div className="overflow-hidden rounded-lg border border-border bg-background">
+                <div className="overflow-hidden rounded-lg border border-border bg-background">
                   <Image
                     src={item.src}
                     alt={item.alt}
                     width={1600}
                     height={900}
                     className="h-auto w-full"
-                    sizes="(max-width: 672px) 100vw, 672px"
+                    sizes="(max-width: 1100px) 100vw, 1100px"
                   />
                 </div>
                 {item.caption ? (
