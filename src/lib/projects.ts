@@ -26,12 +26,12 @@ export const projects: Project[] = [
 **Design.** Four consistent navigation labels, used everywhere. Four modal types, each with a defined purpose and layout pattern: informative, action-oriented, guiding, and minibasket. Validation that only fires on forward movement, never preemptively. Every screen in the flow built on the same rules.`,
     media: [
       {
-        src: "/projects/telenor-checkout-chapters.png",
+        src: "/images/checkout-layout.png",
         alt: "Diagram showing the checkout chapter structure: Cart, Contact, Setup, Delivery, Summary, Payment, Receipt",
         caption: "The chapter model. Progress at the top level only, so the bar stays meaningful.",
       },
       {
-        src: "/projects/telenor-checkout-modals.png",
+        src: "/images/telenor-checkout-modals.png",
         alt: "Four modal types shown side by side: informative, action-oriented, guiding, and minibasket",
         caption: "Four modal types, each with a fixed purpose and layout pattern.",
       },
@@ -133,7 +133,7 @@ Discover → Define → Ideate → Design
     title: "Mental Wellbeing Guidance",
     year: "2021",
     status: "shipped",
-    role: "UX Researcher (solo)",
+    role: "UX Researcher · solo student project",
     tools: "Figma, Google Meet, Trint",
     timeline: "Four weeks",
     oneLiner:
@@ -160,7 +160,7 @@ Three insights came out, each pointing to a principle:
     reflection:
       "We jumped in the deep end and learned to swim. My first real run through the UX research fundamentals, fast, with workshops pushing the creative side hard. I went in worried the pandemic would undermine everything, especially around control. The users proved otherwise. If I did it again I'd lean harder on triangulation, comparing interviews and surveys more closely in synthesis, which means a bigger, more varied dataset. The honest tradeoff in a four-week project.",
     tags: ["UX Research", "Figma", "Interviews"],
-    featured: true,
+    featured: false,
   },
   {
     slug: "telenor-comparison",

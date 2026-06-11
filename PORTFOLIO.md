@@ -56,7 +56,7 @@ Fixed top to bottom, even when sections are skipped:
 
 ## Images
 
-Go in `public/projects/`. The `media` src must match the path exactly: `/projects/filename.jpg` maps to `public/projects/filename.jpg`. Two things break it every time: the folder doesn't exist yet, or the extension is wrong (`.jpg` vs `.jpeg`). Check both before assuming the code is broken.
+Go in `public/images/`. The `media` src must match the path exactly: `/images/filename.jpg` maps to `public/images/filename.jpg`. Two things break it every time: the folder doesn't exist yet, or the extension is wrong (`.jpg` vs `.jpeg`). Check both before assuming the code is broken.
 
 ## Adding a project
 
