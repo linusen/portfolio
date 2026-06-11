@@ -16,7 +16,14 @@ export interface Project {
   oneLiner: string;
   context?: string;
   work?: string;
-  media?: { src: string; alt: string; caption?: string }[];
+  
+media?: {
+  src: string;
+  alt: string;
+  caption?: string;
+  variant?: "inline" | "wide" | "full";
+}[];
+
   metrics?: ProjectMetric[];
   reflection?: string;
   tags?: string[];
