@@ -14,12 +14,12 @@ export const projects: Project[] = [
     oneLiner:
       "End-to-end checkout redesign for two telecom brands, built on one shared system.",
     context:
-      "The existing checkout was structurally broken. Users couldn't go back without starting over. MitID validation appeared before they knew their delivery date. A PayEx rejection wiped the entire cart. Around 20% of checkouts were lost to credit check rejections with no recovery path. The brief was to fix it across both Telenor and CBB, on a shared platform, without either brand feeling compromised.",
+      "The existing checkout was structurally broken. Users couldn't go back without starting over. Around 20% of checkouts were lost to credit check rejections with no recovery path. The brief was to fix it across both Telenor and CBB, on a shared platform, without either brand feeling compromised.",
     work: `Four research methods, one consistent picture. Every phase fed directly into the system I built.
 
 **Discover.** Think-aloud tests with 4 users, a store safari at Telenor Fields, call log analysis via Capturi, and funnel data from analytics. Each one confirmed the same structural problems from a different angle. A notable finding from the store visit: customers were starting the online checkout, getting confused, and coming into the store to finish it in person.
 
-**Define.** Six pain points emerged: no way back, MitID placed too early, PayEx wiping the cart, delivery date confusion, a progress bar that didn't track actual progress, and a hover dependency that broke the flow on mobile. Four design principles became the filter for every decision that followed: simplicity, personalisation, WCAG 2.1 AA, and no hover dependency.
+**Define.** Four pain points emerged: no way back, delivery date confusion, a progress bar that didn't track actual progress, and a hover dependency that broke the flow on mobile. Four design principles became the filter for every decision that followed: simplicity, personalisation, WCAG 2.1 AA, and no hover dependency.
 
 **Ideate.** The fix wasn't a patch job. Individual solutions wouldn't hold without a proper system underneath. I mapped out a chapter model — Cart, Contact, Setup, Delivery, Summary, Payment, Receipt — where progress shows at chapter level only. That kept the bar honest without overwhelming users with granularity.
 
