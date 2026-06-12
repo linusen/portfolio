@@ -15,15 +15,15 @@ export const projects: Project[] = [
       "End-to-end checkout redesign for two telecom brands, built on one shared system.",
     context:
       "The existing checkout was structurally broken. Users couldn't go back without starting over. Around 20% of checkouts were lost to credit check rejections with no recovery path. The brief was to fix it across both Telenor and CBB, on a shared platform, without either brand feeling compromised.",
-    work: `Four research methods, one consistent picture. Every phase fed directly into the system I built.
+    work: `Every phase fed directly into the system I built.
 
-**Discover.** Think-aloud tests with 4 users, a store safari at Telenor Fields, call log analysis via Capturi, and funnel data from analytics. Each one confirmed the same structural problems from a different angle. A notable finding from the store visit: customers were starting the online checkout, getting confused, and coming into the store to finish it in person.
+**Four methods, one picture.** Think-aloud tests with 4 users, a store safari at Telenor Fields, call log analysis via Capturi, and funnel data from analytics. Each one confirmed the same structural problems from a different angle. A notable finding from the store visit: customers were starting the online checkout, getting confused, and coming into the store to finish it in person.
 
-**Define.** Four pain points emerged: no way back, delivery date confusion, a progress bar that didn't track actual progress, and a hover dependency that broke the flow on mobile. Four design principles became the filter for every decision that followed: simplicity, personalisation, WCAG 2.1 AA, and no hover dependency.
+**Four pain points, four principles.** No way back, delivery date confusion, a progress bar that didn't track actual progress, and a hover dependency that broke the flow on mobile. Against those, four design principles became the filter for every decision that followed: simplicity, personalisation, WCAG 2.1 AA, and no hover dependency.
 
-**Ideate.** The fix wasn't a patch job. Individual solutions wouldn't hold without a proper system underneath. I mapped out a chapter model — Cart, Contact, Setup, Delivery, Summary, Payment, Receipt — where progress shows at chapter level only. That kept the bar honest without overwhelming users with granularity.
+**The chapter model.** The fix wasn't a patch job. Individual solutions wouldn't hold without a proper system underneath. I mapped out a chapter model: Cart, Contact, Setup, Delivery, Summary, Payment, Receipt. Progress shows at chapter level only. That kept the bar honest without overwhelming users with granularity.
 
-**Design.** Four consistent navigation labels, used everywhere. Four modal types, each with a defined purpose and layout pattern: informative, action-oriented, guiding, and minibasket. Validation that only fires on forward movement, never preemptively. Every screen in the flow built on the same rules.`,
+**Rules, not screens.** Four consistent navigation labels, used everywhere. Four modal types, each with a defined purpose and layout pattern: informative, action-oriented, guiding, and minibasket. Validation that only fires on forward movement, never preemptively. Every screen in the flow built on the same rules.`,
     media: [
       {
         src: "/images/checkout-layout.png",
@@ -55,13 +55,13 @@ export const projects: Project[] = [
       "New customers often struggle to understand products and pricing well enough to choose the right solution online. We set out to surface contextual guidance at the right moment and translate internal selling points into real customer benefits, making the experience easier to navigate.",
     work: `We tested and iterated at each phase to make sure we were solving the right problem first.
 
-**Discovery.** Kicked off with a cross-functional workshop where three themes surfaced: product configuration, pricing confusion, and the gap between buying in-store versus online.
+**Three themes from one workshop.** Kicked off with a cross-functional session that surfaced product configuration, pricing confusion, and the gap between buying in-store versus online.
 
-**Define.** Clustered the workshop findings into How Might We questions, which pointed to one clear direction: customers need more guidance when navigating products and pricing online. That led us to a guided digital experience, drawing on the dialogue customers have in physical stores.
+**Customers need a guide, not a catalogue.** Clustered the workshop findings into How Might We questions, and they all pointed the same way. The answer was a guided digital experience, drawing on the dialogue customers have in physical stores.
 
-**Ideate.** Sketched solution directions one decision at a time, replicating the kind of conversation a good store assistant would have, rather than overwhelming users with options upfront.
+**One decision at a time.** Sketched solution directions that replicate the kind of conversation a good store assistant would have, rather than overwhelming users with options upfront.
 
-**Design.** Translated the concept into a tangible experience focused on clarity and guidance. Help sits exactly where decisions happen, informative rather than promotional, and available in both text and video so users engage in the way that suits them.`,
+**Help where the choice happens.** Translated the concept into a tangible experience focused on clarity. Guidance is informative rather than promotional, and available in both text and video so users engage in the way that suits them.`,
     media: [
       {
         src: "/images/telenor-guided-design.png",
@@ -99,13 +99,13 @@ export const projects: Project[] = [
 Discover → Define → Ideate → Design
 \`\`\`
 
-**Discover.** Set out to define the target group, user needs, and the product and business benefits. Architects need dimensions, materials, customisation options and blueprint specs before they can confidently specify a product. That information existed, it just wasn't in the catalogue. We talked extensively with architects and noted exactly what they needed.
+**What architects actually need.** Set out to define the target group, user needs, and the product and business benefits. The answer: dimensions, materials, customisation options and blueprint specs, before anyone can confidently specify a product. That information existed, it just wasn't in the catalogue. We talked extensively with architects and noted exactly what was missing.
 
-**Define.** Interviews with architects from two firms surfaced three clear needs: a more structured layout, detailed product specs (dimensions, materials, colours, 3D models), and easier ways to get in touch. Those three became the backbone of the redesign.
+**Three needs became the backbone.** Interviews with architects from two firms surfaced a more structured layout, detailed product specs (dimensions, materials, colours, 3D models), and easier ways to get in touch. The whole redesign hangs on those three.
 
-**Ideate.** Sketched the catalogue structure first, how it should work for the customer and what the main elements were, before touching style. Only once that was agreed did we move to colours, type, and feel. That order kept us from losing time on pixel-perfect questions before the concept was in place.
+**Structure before style.** Sketched how the catalogue should work for the customer and what the main elements were. Only once that was agreed did we move to colours, type, and feel. That order kept us from losing time on pixel-perfect questions before the concept was in place.
 
-**Design.** Built high-fidelity wireframes from the insights, tested with users for another round of refinement, and aligned on the version to take forward.`,
+**Tested, refined, agreed.** Built high-fidelity wireframes from the insights, ran another round of user testing, and aligned on the version to take forward.`,
     media: [
       {
         src: "/images/virklund-sport-introduction.jpeg",
@@ -142,21 +142,21 @@ Discover → Define → Ideate → Design
       "The brief was self-control and mental health, framed as: how might we create a behavior-switching app that gives people control? I led the research end to end, surveys, interviews, synthesis, recommendations. No prototype, just a clear set of next steps. It ran during the pandemic, which made \"control\" a loaded word. I worried the timing would skew everything. If anything it made the research sharper.",
     work: `Four phases, kept deliberately simple.
 
-**Kick-start.** Defined the target group, their needs, and the product and business angles. Used the double diamond to frame the problem before chasing solutions. I started from the brief's persona, mapped assumptions about user needs, plotted them by importance, and wrote three hypotheses: that users struggle to spend time meaningfully, that they want more balance away from digital spaces, and that they want to overcome stress. Three angles on the same problem, explored broadly before narrowing.
+**Three hypotheses, one problem.** Defined the target group, their needs, and the product and business angles. Used the double diamond to frame the problem before chasing solutions. I started from the brief's persona, mapped assumptions about user needs, plotted them by importance, and wrote the hypotheses: that users struggle to spend time meaningfully, that they want more balance away from digital spaces, and that they want to overcome stress. Explored broadly before narrowing.
 
-**Fieldwork.** Triangulated quantitative and qualitative methods, surveys first, then interviews to go deeper. Survey participants were split evenly by gender, aged 28 to 36, most reporting stress once or twice a week. Phone use ranged wildly, 30 minutes to 6 hours a day. The most common effect of stress was the inability to rest, followed by lower efficiency. I kept the small-sample limitation front of mind throughout.
+**Stress was the common thread.** Triangulated quantitative and qualitative methods, surveys first, then interviews to go deeper. Survey participants were split evenly by gender, aged 28 to 36, most reporting stress once or twice a week. Phone use ranged wildly, 30 minutes to 6 hours a day. The most common effect of stress was the inability to rest, followed by lower efficiency. I kept the small-sample limitation front of mind throughout.
 
-**Synthesis.** Built a discussion guide from the survey findings and interviewed five participants, 25 to 45 minutes each over Google Meet, transcribed with Trint. Then affinity mapping in Figma to find patterns across quotes and transcripts, and to check them against the hypotheses.
+**Three insights, three principles.** Built a discussion guide from the survey findings and interviewed five participants, 25 to 45 minutes each over Google Meet, transcribed with Trint. Then affinity mapping in Figma to find patterns across quotes and transcripts, and to check them against the hypotheses.
 
 ![Affinity map mapping hypotheses to user quotes, insights, and design principles](/images/mental-wellbeing-synthesis.png)
 
-Three insights came out, each pointing to a principle:
+Each insight pointed to a principle:
 
 - Daily routines crowd out time for rest. → Give users simple opportunities to reach a mindful state.
 - People want to take back control of their devices, but hard restrictions backfire. → Give frequent phone users actionable self-control information, not a cutoff.
 - Stressful jobs follow people home. → Prevent work stress from spilling into everyday life.
 
-**Recommendations.** Boiled it down to three directions to take forward: how might we give users simple opportunities to reach a mindful state; how might we give frequent phone users actionable self-control information; how might we give people tools to overcome everyday stress. Each needs further research paired with stakeholder workshops.`,
+**Directions, not designs.** Boiled it down to three directions to take forward: how might we give users simple opportunities to reach a mindful state; how might we give frequent phone users actionable self-control information; how might we give people tools to overcome everyday stress. Each needs further research paired with stakeholder workshops.`,
     reflection:
       "We jumped in the deep end and learned to swim. My first real run through the UX research fundamentals, fast, with workshops pushing the creative side hard. I went in worried the pandemic would undermine everything, especially around control. The users proved otherwise. If I did it again I'd lean harder on triangulation, comparing interviews and surveys more closely in synthesis, which means a bigger, more varied dataset. The honest tradeoff in a four-week project.",
     tags: ["UX Research", "Figma", "Interviews"],
@@ -176,25 +176,25 @@ Three insights came out, each pointing to a principle:
       "Part of a bigger push to turn Telenor's online shop into a flagship store experience. New customers were struggling to compare devices and find the right fit while browsing. I led the UX from discovery through to a tested prototype in one month.",
     work: `We tested at each phase to make sure we were solving the right problem before designing the solution.
 
-**Discover.** A short survey to validate one assumption: do people actually compare phones before buying online? Confirmed the behaviour existed before building anything around it.
+**Do people even compare?** A short survey to validate that one assumption. They do, and confirming the behaviour existed earned the right to build anything around it.
 
-**Define.** Mapped the findings onto a feasibility matrix with stakeholders, each sticky a possible direction, to agree fast on where to focus.
+**Stickies on a feasibility matrix.** Mapped the findings with stakeholders, each sticky a possible direction, to agree fast on where to focus.
 
-**Ideate.** Sketched three connected surfaces: a campaign page, a comparison modal, and a product detail page. Iterative hall tests with a small group narrowed it to two directions, which we then A/B tested at scale. Testing shaped the details: key specs highlighted for a faster scan, CTA kept sticky at the top.
+**Three surfaces, two directions, one winner.** Sketched a campaign page, a comparison modal, and a product detail page. Iterative hall tests with a small group narrowed it to two directions, which we then A/B tested at scale. Testing shaped the details: key specs highlighted for a faster scan, CTA kept sticky at the top.
 
-**Design.** Built the high-fidelity prototype from what the testing revealed, and aligned the team on the version to ship.`,
-media: [
-  {
-    src: "/images/device-comparison-select.png",
-    alt: "Phone list with compare checkboxes, two phones ticked, and a sticky compare bar at the top.",
-    caption: "The way in. Tick the phones you're weighing up, then compare.",
-  },
-  {
-    src: "/images/device-comparison-tool.png",
-    alt: "Two phones compared side by side with an empty third slot, specs lined up and differences highlighted.",
-    caption: "The comparison itself. Up to three phones, key specs lined up, differences highlighted so the choice is quick.",
-  },
-  ],
+**Built from what the testing said.** The high-fidelity prototype came straight from the test results, and the team aligned on the version to ship.`,
+    media: [
+      {
+        src: "/images/device-comparison-select.png",
+        alt: "Phone list with compare checkboxes, two phones ticked, and a sticky compare bar at the top.",
+        caption: "The way in. Tick the phones you're weighing up, then compare.",
+      },
+      {
+        src: "/images/device-comparison-tool.png",
+        alt: "Two phones compared side by side with an empty third slot, specs lined up and differences highlighted.",
+        caption: "The comparison itself. Up to three phones, key specs lined up, differences highlighted so the choice is quick.",
+      },
+    ],
     metrics: [
       { value: "+256%", label: "Conversion lift when comparison was used" },
       { value: "93.51%", label: "Of orders contained the compared device" },
@@ -202,7 +202,6 @@ media: [
     reflection:
       "Validating the behaviour up front, before designing anything, is what kept a one-month timeline honest. The temptation is always to start sketching. The survey earned us the right to.",
     tags: ["UX", "Figma", "Maze", "ProtoPie"],
-    
     links: [
       { label: "See it live", url: "https://www.telenor.dk/shop/mobiler/" },
     ],
