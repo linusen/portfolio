@@ -64,12 +64,12 @@ export const projects: Project[] = [
 **Help where the choice happens.** Translated the concept into a tangible experience focused on clarity. Guidance is informative rather than promotional, and available in both text and video so users engage in the way that suits them.`,
     media: [
       {
-        src: "/images/telenor-guided-design.png",
+        src: "/images/guided-design.png",
         alt: "Two phone screens showing the guided iPhone 16 Pro buying flow with colour and storage selection",
         caption: "The guided flow. One decision at a time, with help surfaced right where the choice happens.",
       },
       {
-        src: "/images/telenor-guided-help.png",
+        src: "/images/guided-help.png",
         alt: "Phone screen showing contextual guide element with text and video help during product selection",
         caption: "Contextual guidance placed at the decision point, informative not promotional, in text and video.",
       },
