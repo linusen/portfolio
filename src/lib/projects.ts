@@ -14,7 +14,7 @@ export const projects: Project[] = [
     oneLiner:
       "End-to-end checkout redesign for two telecom brands, built on one shared system.",
     context:
-      "The existing checkout was structurally broken. Users couldn't go back without starting over. Around 20% of checkouts were lost to credit check rejections with no recovery path. The brief was to fix it across both Telenor and CBB, on a shared platform, without either brand feeling compromised.",
+      "The existing checkout was structurally broken. Users couldn't go back without starting over, and when something failed late in the flow, there was no recovery path, just a dead end and a lost order. The brief was to fix it across both Telenor and CBB, on a shared platform, without either brand feeling compromised.",
     work: `Every phase fed directly into the system I built.
 
 **Four methods, one picture.** Think-aloud tests with 4 users, a store safari at Telenor Fields, call log analysis via Capturi, and funnel data from analytics. Each one confirmed the same structural problems from a different angle. A notable finding from the store visit: customers were starting the online checkout, getting confused, and coming into the store to finish it in person.
