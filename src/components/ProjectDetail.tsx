@@ -5,6 +5,8 @@ import { StatusTag } from "./StatusTag";
 
 type ProjectDetailProps = {
   project: Project;
+  prev?: Project;
+  next?: Project;
 };
 
 function SectionHeading({ children }: { children: string }) {
@@ -15,7 +17,7 @@ function SectionHeading({ children }: { children: string }) {
   );
 }
 
-export function ProjectDetail({ project }: ProjectDetailProps) {
+export function ProjectDetail({ project, prev, next }: ProjectDetailProps) {
   const hasMedia = Boolean(project.media?.length);
   const hasMetrics = Boolean(project.metrics?.length);
   const hasLinks = Boolean(project.links?.length);
@@ -140,6 +142,31 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
           </ul>
         </section>
       ) : null}
+      {prev || next ? (
+        <nav className="flex justify-between gap-4 border-t border-border pt-10">
+          {prev ? (
+            <a href={`/projects/${prev.slug}`} className="group max-w-[45%]">
+              <span className="block text-sm text-muted">Previous</span>
+              <span className="mt-1 block text-foreground group-hover:text-accent">
+                {prev.title}
+              </span>
+            </a>
+          ) : (
+            <span />
+          )}
+          {next ? (
+            <a href={`/projects/${next.slug}`} className="group max-w-[45%] text-right">
+              <span className="block text-sm text-muted">Next</span>
+              <span className="mt-1 block text-foreground group-hover:text-accent">
+                {next.title}
+              </span>
+            </a>
+          ) : (
+            <span />
+          )}
+        </nav>
+      ) : null}
     </article>
+
   );
 }

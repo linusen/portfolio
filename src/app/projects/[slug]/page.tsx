@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/Container";
 import { ProjectDetail } from "@/components/ProjectDetail";
-import { getAllProjectSlugs, getProjectBySlug } from "@/lib/projects";
+import { getAllProjectSlugs, getProjectBySlug, getAdjacentProjects } from "@/lib/projects";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -29,6 +29,8 @@ export default async function ProjectPage({ params }: PageProps) {
 
   if (!project) notFound();
 
+  const { prev, next } = getAdjacentProjects(slug);
+
   return (
     <Container>
       <Link
@@ -37,7 +39,7 @@ export default async function ProjectPage({ params }: PageProps) {
       >
         Back to projects
       </Link>
-      <ProjectDetail project={project} />
+      <ProjectDetail project={project} prev={prev} next={next} />
     </Container>
   );
 }

@@ -223,6 +223,19 @@ export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find((p) => p.slug === slug);
 }
 
+export function getAdjacentProjects(slug: string): {
+  prev: Project | undefined;
+  next: Project | undefined;
+} {
+  const all = getAllProjects();
+  const index = all.findIndex((p) => p.slug === slug);
+  if (index === -1) return { prev: undefined, next: undefined };
+  return {
+    prev: all[index - 1],
+    next: all[index + 1],
+  };
+}
+
 export function getAllProjectSlugs(): string[] {
   return projects.map((p) => p.slug);
 }
