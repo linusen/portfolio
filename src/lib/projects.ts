@@ -24,19 +24,19 @@ export const projects: Project[] = [
 **The chapter model.** The fix wasn't a patch job. Individual solutions wouldn't hold without a proper system underneath. I mapped out a chapter model: Cart, Contact, Setup, Delivery, Summary, Payment, Receipt. Progress shows at chapter level only. That kept the bar honest without overwhelming users with granularity.
 
 **Rules, not screens.** Four consistent navigation labels, used everywhere. Four modal types, each with a defined purpose and layout pattern: informative, action-oriented, guiding, and minibasket. Validation that only fires on forward movement, never preemptively. Every screen in the flow built on the same rules.`,
-// Hidden until launch (July 2026)
-    // media: [
-    //   {
-    //     src: "/images/checkout-layout.png",
-    //     alt: "Diagram showing the checkout chapter structure: Cart, Contact, Setup, Delivery, Summary, Payment, Receipt",
-    //     caption: "The chapter model. Progress at the top level only, so the bar stays meaningful.",
-    //   },
-    //   {
-    //     src: "/images/telenor-checkout-modals.png",
-    //     alt: "Four modal types shown side by side: informative, action-oriented, guiding, and minibasket",
-    //     caption: "Four modal types, each with a fixed purpose and layout pattern.",
-    //   },
-    // ],
+
+     media: [
+       {
+         src: "/images/checkout-layout.png",
+         alt: "Diagram showing the checkout chapter structure: Cart, Contact, Setup, Delivery, Summary, Payment, Receipt",
+         caption: "The chapter model. Progress at the top level only, so the bar stays meaningful.",
+       },
+       {
+         src: "/images/telenor-checkout-modals.png",
+         alt: "Four modal types shown side by side: informative, action-oriented, guiding, and minibasket",
+         caption: "Four modal types, each with a fixed purpose and layout pattern.",
+       },
+     ],
     reflection:
       "Building a system rather than patching symptoms was the right call. Two brands, one codebase, zero compromises on either side. The proof will be in the numbers once it's live.",
     tags: ["UX", "Figma", "Capturi", "Maze"],
@@ -63,24 +63,25 @@ export const projects: Project[] = [
 **One decision at a time.** Sketched solution directions that replicate the kind of conversation a good store assistant would have, rather than overwhelming users with options upfront.
 
 **Help where the choice happens.** Translated the concept into a tangible experience focused on clarity. Guidance is informative rather than promotional, and available in both text and video so users engage in the way that suits them.`,
-// Hidden until launch
-    // media: [
-    //   {
-    //     src: "/images/guided-design.png",
-    //     alt: "Two phone screens showing the guided iPhone 16 Pro buying flow with colour and storage selection",
-    //     caption: "The guided flow. One decision at a time, with help surfaced right where the choice happens.",
-    //   },
-    //   {
-    //     src: "/images/guided-help.png",
-    //     alt: "Phone screen showing contextual guide element with text and video help during product selection",
-    //     caption: "Contextual guidance placed at the decision point, informative not promotional, in text and video.",
-    //   },
-    // ],
+
+     media: [
+       {
+         src: "/images/guided-design.png",
+         alt: "Two phone screens showing the guided iPhone 16 Pro buying flow with colour and storage selection",
+         caption: "The guided flow. One decision at a time, with help surfaced right where the choice happens.",
+       },
+       {
+         src: "/images/guided-help.png",
+         alt: "Phone screen showing contextual guide element with text and video help during product selection",
+         caption: "Contextual guidance placed at the decision point, informative not promotional, in text and video.",
+       },
+     ],
     reflection:
       "After testing, it was clear that timely, relevant guidance makes a real difference when people face complex choices. The win was placing help exactly where decisions happen, and letting people take it in whichever way suited them.",
-   // links: [
-    //   { label: "Interactive prototype", url: "https://cloud.protopie.io/p/your-prototype-id" },
-    // ],
+    links: [
+    
+       { label: "Interactive prototype", url: "https://cloud.protopie.io/p/your-prototype-id" },
+     ],
     tags: ["UX", "Figma", "Maze", "ProtoPie"],
     featured: true,
   },
