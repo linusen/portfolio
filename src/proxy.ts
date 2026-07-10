@@ -4,8 +4,8 @@ const PROTECTED_SLUGS = ["telenor-checkout", "telenor-guided-buying"];
 const COOKIE_NAME = "project-access";
 const TOKEN_PARAM = "key";
 
-export function middleware(request: NextRequest) {
-  const { pathname, searchParams } = request.nextUrl;
+export function proxy(request: NextRequest) {
+    const { pathname, searchParams } = request.nextUrl;
 
   // Magic link: ?key=... on ANY page grants access and cleans the URL
   const token = searchParams.get(TOKEN_PARAM);

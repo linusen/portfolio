@@ -53,35 +53,43 @@ export const projects: Project[] = [
     oneLiner:
       "A guided buying flow built around conversation design, helping customers choose a phone with confidence.",
     context:
-      "New customers often struggle to understand products and pricing well enough to choose the right solution online. We set out to surface contextual guidance at the right moment and translate internal selling points into real customer benefits, making the experience easier to navigate.",
-    work: `We tested and iterated at each phase to make sure we were solving the right problem first.
+      "New customers often struggle to understand products and pricing well enough to choose the right solution online. Store visits showed the same pattern in person, staff spend real time helping people translate \"how many photos do you take\" into \"how much storage.\" We set out to bring that same guidance online, right at the moment a decision needs to be made.",
+    work: `The numbers backed up what we were seeing in stores. 47% of buyers started configuring a phone and never reached the basket, with the steepest drop at the subscription choice, the least tangible decision in the flow.
+
+![Research: where the decision stalls](/images/guided-research.png "47% of buyers started configuring a phone and never reached the basket, with the steepest drop at the subscription choice.")
+
+We mapped that drop-off to concrete decision points, then designed a contextual guide instead of a separate advisory page.
 
 **Three themes from one workshop.** Kicked off with a cross-functional session that surfaced product configuration, pricing confusion, and the gap between buying in-store versus online.
 
 **Customers need a guide, not a catalogue.** Clustered the workshop findings into How Might We questions, and they all pointed the same way. The answer was a guided digital experience, drawing on the dialogue customers have in physical stores.
 
+![Process: placing help at the decision](/images/guided-process.png "Four steps, from mapping drop-off points to validating the guide with real shoppers.")
+
 **One decision at a time.** Sketched solution directions that replicate the kind of conversation a good store assistant would have, rather than overwhelming users with options upfront.
 
-**Help where the choice happens.** Translated the concept into a tangible experience focused on clarity. Guidance is informative rather than promotional, and available in both text and video so users engage in the way that suits them.`,
+**Help where the choice happens.** Translated the concept into a tangible experience focused on clarity. Guidance is informative rather than promotional, and available in both text and video so users engage in the way that suits them.
 
-     media: [
-       {
-         src: "/images/guided-design.png",
-         alt: "Two phone screens showing the guided iPhone 16 Pro buying flow with colour and storage selection",
-         caption: "The guided flow. One decision at a time, with help surfaced right where the choice happens.",
-       },
-       {
-         src: "/images/guided-help.png",
-         alt: "Phone screen showing contextual guide element with text and video help during product selection",
-         caption: "Contextual guidance placed at the decision point, informative not promotional, in text and video.",
-       },
-     ],
+**Tested with real hesitation.** Ran the flow with nine shoppers on the live configuration steps, not in isolation. The core idea held. People who were unsure how to decide said being guided through it felt like "a genuinely good service." Testing also surfaced sharper problems: two of eight mistook an included insurance option for an ad and skipped past it, and five of nine never noticed the running price total as choices added up. Several also wanted to compare total cost against competitors before buying, something the flow doesn't support yet.
+
+![Annotated prototype from testing](/images/guided-wireframe.png "Real annotations from the nine-person test round, layered on the working prototype.")`,
+    media: [
+      {
+        src: "/images/guided-design.png",
+        alt: "Two phone screens showing the guided iPhone 16 Pro buying flow with colour and storage selection",
+        caption: "The guided flow. One decision at a time, with help surfaced right where the choice happens.",
+      },
+      {
+        src: "/images/guided-help.png",
+        alt: "Phone screen showing contextual guide element with text and video help during product selection",
+        caption: "The same guide, expanded into video for people who'd rather watch than read.",
+      },
+    ],
     reflection:
-      "After testing, it was clear that timely, relevant guidance makes a real difference when people face complex choices. The win was placing help exactly where decisions happen, and letting people take it in whichever way suited them.",
+      "Testing validated the core bet. People wanted to be guided, and said so directly. But it also surfaced a real gap: people kept asking to compare total cost against competitors before committing, and the flow doesn't let them do that today. Smaller misses stacked up too, an insurance option read as an ad, a running price total that five of nine people never even noticed. The win was proving guidance belongs at the decision point. What's left is closing the specific holes testing found before calling it done.",
     links: [
-    
-       { label: "Interactive prototype", url: "https://cloud.protopie.io/p/your-prototype-id" },
-     ],
+      { label: "Interactive prototype", url: "https://cloud.protopie.io/p/fbdc9a58d07a60ff78e825cd?ui=true&scaleToFit=true&enableHotspotHints=true&cursorType=touch&mockup=true&bgColor=%23F5F5F5&bgImage=undefined&playSpeed=1&sceneId=eeddee25-3e5a-49ef-9fa2-0f3f94c2fb9b" },
+    ],
     tags: ["UX", "Figma", "Maze", "ProtoPie"],
     featured: true,
   },
