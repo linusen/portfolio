@@ -23,16 +23,18 @@ function ImageRenderer({
   alt,
   title,
 }: {
-  src?: string;
+  src?: string | Blob;
   alt?: string;
   title?: string;
 }) {
+  const resolvedSrc = typeof src === "string" ? src : "";
+
   return (
     <figure className="mt-10 mb-12 lg:mt-14 lg:mb-16 sm:-mx-10 lg:-mx-20 xl:-mx-28">
       <div className="overflow-hidden rounded-lg border border-border bg-background">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={typeof src === "string" ? src : ""}
+          src={resolvedSrc}
           alt={alt ?? ""}
           className="h-auto w-full"
         />
