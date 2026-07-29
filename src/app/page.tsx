@@ -27,7 +27,7 @@ export default function HomePage() {
         <p className="mt-12">
           <Link
             href="/projects"
-            className="text-sm text-muted transition-colors hover:text-accent"
+            className="font-bold text-sm text-muted transition-colors hover:text-accent"
           >
             All projects
           </Link>
@@ -37,7 +37,7 @@ export default function HomePage() {
       <section className="max-w-prose pb-8">
         <p className="text-muted leading-relaxed">
           Questions, collaboration, or just hello?{" "}
-          <Link href="/contact" className="text-muted transition-colors hover:text-accent">
+          <Link href="/contact" className="font-bold text-muted transition-colors hover:text-accent">
             Get in touch
           </Link>
           .
