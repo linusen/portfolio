@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { SelectedWorkCard } from "@/components/SelectedWorkCard";
 import { getFeaturedProjects } from "@/lib/projects";
@@ -41,6 +42,16 @@ export default function HomePage() {
           </Link>
           .
         </p>
+      </section>
+
+      <section className="relative z-10 flex justify-center pt-12 -mb-16 sm:pt-16">
+        <Image
+          src="/linus-headshot.png"
+          alt="Linus Lindgren"
+          width={480}
+          height={480}
+          className="h-auto w-full max-w-xs sm:max-w-sm"
+        />
       </section>
     </Container>
   );
