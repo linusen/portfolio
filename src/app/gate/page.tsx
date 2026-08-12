@@ -7,9 +7,9 @@ export default async function GatePage({
   
     return (
       <main className="mx-auto max-w-sm px-6 py-24">
-        <h1 className="text-xl font-semibold mb-2">This one's still in progress</h1>
+        <h1 className="text-xl font-semibold mb-2">This one&apos;s still in progress</h1>
         <p className="text-sm text-gray-500 mb-6">
-          Password protected until it's ready to share publicly.
+          Password protected until it&apos;s ready to share publicly.
         </p>
   
         <form action="/api/gate" method="POST" className="space-y-3">
