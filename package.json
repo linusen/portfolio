@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "prepare": "husky install",
     "test": "jest --passWithNoTests",
-    "test:ci": "jest --runInBand --passWithNoTests"
+    "test:ci": "jest --runInBand --passWithNoTests",
+    "test:coverage": "jest --coverage --runInBand --passWithNoTests"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": "eslint --cache --fix"
