@@ -2,6 +2,8 @@
 
 A personal note to self for keeping this site consistent. Covers the voice, the data model, and how to add work. For anything structural, paste the real `src/lib/projects.ts` rather than trusting this file. This file drifts; the source does not.
 
+See also [README.md](./README.md) for quick start, build, and deployment instructions.
+
 ## What it is
 
 A UX portfolio. Next.js (App Router), TypeScript, Tailwind v4, React 19. Projects live as typed data in `src/lib/projects.ts` and render through the `ProjectDetail` component. Hosted on Vercel, auto-rebuilds on push.
