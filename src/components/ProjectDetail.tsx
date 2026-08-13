@@ -1,6 +1,6 @@
-import Image from "next/image";
 import type { Project } from "@/lib/types";
 import { MarkdownContent } from "./MarkdownContent";
+import { ProjectMedia } from "./ProjectMedia";
 import { StatusTag } from "./StatusTag";
 
 type ProjectDetailProps = {
@@ -77,16 +77,7 @@ export function ProjectDetail({ project, prev, next }: ProjectDetailProps) {
           <div className="space-y-10 lg:mx-[calc((100%-1100px)/2)] lg:w-[1100px]">
             {project.media!.map((item) => (
               <figure key={item.src}>
-                <div className="overflow-hidden rounded-lg border border-border bg-background">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    width={1600}
-                    height={900}
-                    className="h-auto w-full"
-                    sizes="(max-width: 1100px) 100vw, 1100px"
-                  />
-                </div>
+                <ProjectMedia item={item} />
                 {item.caption ? (
                   <figcaption className="mt-3 text-sm text-muted leading-relaxed">
                     {item.caption}

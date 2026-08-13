@@ -73,25 +73,27 @@ We mapped that drop-off to concrete decision points, then designed a contextual 
 **Tested with real hesitation.** Ran the flow with nine shoppers on the live configuration steps, not in isolation. The core idea held. People who were unsure how to decide said being guided through it felt like "a genuinely good service." Testing also surfaced sharper problems: two of eight mistook an included insurance option for an ad and skipped past it, and five of nine never noticed the running price total as choices added up. Several also wanted to compare total cost against competitors before buying, something the flow doesn't support yet.
 
 ![Annotated prototype from testing](/images/guided-wireframe.png "Real annotations from the nine-person test round, layered on the working prototype.")`,
-    media: [
-      {
-        src: "/images/guided-design.png",
-        alt: "Two phone screens showing the guided iPhone 16 Pro buying flow with colour and storage selection",
-        caption: "The guided flow. One decision at a time, with help surfaced right where the choice happens.",
-      },
-      {
-        src: "/images/guided-help.png",
-        alt: "Phone screen showing contextual guide element with text and video help during product selection",
-        caption: "The same guide, expanded into video for people who'd rather watch than read.",
-      },
-    ],
-    reflection:
-      "Testing validated the core bet. People wanted to be guided, and said so directly. But it also surfaced a real gap: people kept asking to compare total cost against competitors before committing, and the flow doesn't let them do that today. Smaller misses stacked up too, an insurance option read as an ad, a running price total that five of nine people never even noticed. The win was proving guidance belongs at the decision point. What's left is closing the specific holes testing found before calling it done.",
-    links: [
-      { label: "Interactive prototype", url: "https://cloud.protopie.io/p/fbdc9a58d07a60ff78e825cd?ui=true&scaleToFit=true&enableHotspotHints=true&cursorType=touch&mockup=true&bgColor=%23F5F5F5&bgImage=undefined&playSpeed=1&sceneId=eeddee25-3e5a-49ef-9fa2-0f3f94c2fb9b" },
-    ],
-    tags: ["UX", "Figma", "Maze", "ProtoPie"],
-    featured: true,
+media: [
+  {
+    src: "/images/guided-design.png",
+    alt: "Two phone screens showing the guided iPhone 16 Pro buying flow with colour and storage selection",
+    caption: "The guided flow. One decision at a time, with help surfaced right where the choice happens.",
+  },
+  {
+    src: "/images/guided-help.png",
+    alt: "Phone screen showing contextual guide element with text and video help during product selection",
+    caption: "The same guide, expanded into video for people who'd rather watch than read.",
+  },
+  {
+    src: "/images/prototype-flow-2.gif",
+    alt: "Prototype flow walkthrough",
+    caption: "The prototype in motion, the full guided flow from selection to checkout.",
+  },
+],
+reflection:
+  "Testing validated the core bet. People wanted to be guided, and said so directly. But it also surfaced a real gap: people kept asking to compare total cost against competitors before committing, and the flow doesn't let them do that today. Smaller misses stacked up too, an insurance option read as an ad, a running price total that five of nine people never even noticed. The win was proving guidance belongs at the decision point. What's left is closing the specific holes testing found before calling it done.",
+tags: ["UX", "Figma", "Maze", "ProtoPie"],
+featured: true,
   },
   {
     slug: "virklund-sport",

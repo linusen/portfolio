@@ -52,9 +52,11 @@ After you add or change projects, restart the dev server if it is already runnin
 
 Sections on the project page always appear in the same order. If a field is empty or missing, that section is skipped.
 
-### Images
+### Images and GIFs
 
-**Local files:** put them in `public/projects/`, then reference them from `media` with a matching path, e.g. `"/projects/studio-hero.jpg"`. The path must match the file exactly, including the extension.
+**Local files:** put them in `public/images/` or `public/projects/`, then reference them from `media` with a matching path, e.g. `"/images/studio-hero.jpg"`. The path must match the file exactly, including the extension.
+
+**GIFs:** use a `.gif` path in `media` like any other visual. Animated GIFs render with a plain `img` tag so the animation is preserved. Static images (`.png`, `.jpg`, `.webp`) still use optimized `next/image`.
 
 **Remote URLs:** allowed if the host is listed in `next.config.ts` under `images.remotePatterns`. Unsplash is configured already. For another host, add a pattern there and rebuild.
 
@@ -65,9 +67,14 @@ Example:
 ```ts
 media: [
   {
-    src: "/projects/my-project.jpg",
+    src: "/images/my-project.jpg",
     alt: "Screenshot of the settings screen",
     caption: "Optional line under the image.",
+  },
+  {
+    src: "/images/prototype-flow.gif",
+    alt: "Prototype walkthrough showing the full checkout flow",
+    caption: "The prototype in motion.",
   },
 ],
 ```
