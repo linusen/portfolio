@@ -19,24 +19,33 @@ export const projects: Project[] = [
 
 **Four methods, one picture.** Think-aloud tests with 4 users, a store safari at Telenor Fields, call log analysis via Capturi, and funnel data from analytics. Each one confirmed the same structural problems from a different angle. A notable finding from the store visit: customers were starting the online checkout, getting confused, and coming into the store to finish it in person.
 
-**Four pain points, four principles.** No way back, delivery date confusion, a progress bar that didn't track actual progress, and a hover dependency that broke the flow on mobile. Against those, four design principles became the filter for every decision that followed: simplicity, personalisation, WCAG 2.1 AA, and no hover dependency.
+![Insights from sprint testing](/images/checkout-research.png "Testing surfaced the same friction from four angles: guidance that read as advertising rather than help, choices that felt locked once pre-filled, a price that never resolved into one number, and steps that only worked one at a time.")
+
+**Four needs, four problems.** Read together with the store and call data, the same friction kept surfacing: no way back once committed, delivery dates that confused rather than clarified, a progress bar disconnected from where people actually were, and a flow that broke the moment hover wasn't an option.
+
+**Four principles.** Against those problems, four design principles became the filter for every decision that followed: simplicity, personalisation, WCAG 2.1 AA, and no hover dependency.
 
 **The chapter model.** The fix wasn't a patch job. Individual solutions wouldn't hold without a proper system underneath. I mapped out a chapter model: Cart, Contact, Setup, Delivery, Summary, Payment, Receipt. Progress shows at chapter level only. That kept the bar honest without overwhelming users with granularity.
 
 **Rules, not screens.** Four consistent navigation labels, used everywhere. Four modal types, each with a defined purpose and layout pattern: informative, action-oriented, guiding, and minibasket. Validation that only fires on forward movement, never preemptively. Every screen in the flow built on the same rules.`,
 
-     media: [
-       {
-         src: "/images/checkout-layout.png",
-         alt: "Diagram showing the checkout chapter structure: Cart, Contact, Setup, Delivery, Summary, Payment, Receipt",
-         caption: "The chapter model. Progress at the top level only, so the bar stays meaningful.",
-       },
-       {
-         src: "/images/telenor-checkout-modals.png",
-         alt: "Four modal types shown side by side: informative, action-oriented, guiding, and minibasket",
-         caption: "Four modal types, each with a fixed purpose and layout pattern.",
-       },
-     ],
+      media: [
+      {
+        src: "/images/checkout-guidance-principles.png",
+        alt: "Mobile checkout step annotated with four design principles: product name shown at top, headline phrased as a question, optional guiding text, and an expandable help element — each labeled with its purpose.",
+        caption: "Product name stays visible throughout. Headlines phrased as questions. Guiding text and explainers only where they add value, never by default.",
+      },
+      {
+        src: "/images/checkout-steps.png",
+        alt: "Four mobile checkout screens shown in sequence — intro, number choice, phone number input, and confirmation — each presenting a single question before the user continues.",
+        caption: "One question at a time. Intro, choice, input, confirmation, each step asks exactly one thing before moving forward.",
+      },
+      {
+        src: "/images/checkout-flow.gif",
+        alt: "Checkout flow walkthrough",
+        caption: "The flow in motion, one question at a time from setup to confirmation.",
+      },
+    ],
     reflection:
       "Building a system rather than patching symptoms was the right call. Two brands, one codebase, zero compromises on either side. The proof will be in the numbers once it's live.",
     tags: ["UX", "Figma", "Capturi", "Maze"],
