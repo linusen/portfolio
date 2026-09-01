@@ -3,7 +3,7 @@ import type { Project } from "@/lib/types";
  * Add a project here. Slug becomes the URL: /projects/your-slug
  */
 export const projects: Project[] = [
-  {
+  /*{
     slug: "telenor-checkout",
     title: "Checkout Flow — Telenor & CBB",
     year: "2026",
@@ -104,6 +104,7 @@ reflection:
 tags: ["UX", "Figma", "Maze", "ProtoPie"],
 featured: true,
   },
+  */
   {
     slug: "virklund-sport",
     title: "Reimagining Virklund Sport",
