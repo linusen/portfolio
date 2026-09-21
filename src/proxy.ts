@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const PROTECTED_SLUGS = ["telenor-checkout", "telenor-guided-buying"];
+const PROTECTED_SLUGS: string[] = [];
 const COOKIE_NAME = "project-access";
 const TOKEN_PARAM = "key";
 
