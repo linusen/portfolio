@@ -16,7 +16,21 @@ export const metadata: Metadata = {
     default: "Linus Lindgren",
     template: "%s · Linus Lindgren",
   },
-  description: "Personal portfolio. Projects, writing, and ways to get in touch.",
+  description:
+    "Copenhagen-based UX designer creating clearer digital experiences for complex products and services.",
+  openGraph: {
+    title: "Linus Lindgren",
+    description:
+      "Portfolio of UX design projects focused on clarity, decision support, and better user journeys.",
+    type: "website",
+    siteName: "Linus Lindgren",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Linus Lindgren",
+    description:
+      "Portfolio of UX design projects focused on clarity, decision support, and better user journeys.",
+  },
 };
 
 export default function RootLayout({
