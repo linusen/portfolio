@@ -10,7 +10,7 @@ export const projects: Project[] = [
     status: "in progress",
     role: "UX Designer (with 1 UI designer, 2 developers)",
     tools: "Figma, Capturi, Maze",
-    timeline: "2024, launching July 2026",
+    timeline: "2024, launching October 2026",
     oneLiner:
       "End-to-end checkout redesign for two telecom brands, built on one shared system.",
     context:
