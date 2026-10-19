@@ -11,7 +11,8 @@ export default function HomePage() {
     <Container>
       <section className="mb-20 max-w-prose sm:mb-28">
         <p className="text-lg text-muted leading-relaxed">
-          Copenhagen-based UX Designer. I find what frustrates people, then design it away.
+          Copenhagen-based UX designer. I turn confusing product journeys into clearer decisions,
+          calmer flows, and better outcomes for real people.
         </p>
       </section>
 
