@@ -31,16 +31,6 @@ export const projects: Project[] = [
 
       media: [
       {
-        src: "/images/checkout-research.png",
-        alt: "Research snapshot showing the friction points uncovered in sprint testing and analytics for the checkout flow.",
-        caption: "The research pointed to the same structural issues from every angle: unclear guidance, forced choices, poor recovery, and a progress system that didn’t match the user journey.",
-      },
-      {
-        src: "/images/checkout-layout.png",
-        alt: "Checkout layout overview showing the chapter-based structure and consistent screen patterns for Telenor and CBB.",
-        caption: "The solution was not a patch. It was a chapter-based system that kept the flow predictable, recoverable, and consistent across both brands.",
-      },
-      {
         src: "/images/checkout-guidance-principles.png",
         alt: "Mobile checkout step annotated with four design principles: product name shown at top, headline phrased as a question, optional guiding text, and an expandable help element — each labeled with its purpose.",
         caption: "Product name stays visible throughout. Headlines phrased as questions. Guiding text and explainers only where they add value, never by default.",
