@@ -30,7 +30,14 @@ export default function AboutPage() {
           problems that keep nagging at me until I have a better way to solve them.
         </p>
         <p>
-          If something here resonates, the contact page is the easiest way to reach me.
+          Questions, collaboration, or just hello?{" "}
+          <a
+            href="/contact"
+            className="font-bold text-muted transition-colors hover:text-accent"
+          >
+            Get in touch
+          </a>
+          .
         </p>
       </div>
     </Container>
